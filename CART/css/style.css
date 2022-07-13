@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Finlandica', sans-serif;
+    background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #8bacd1;
+    color: #fff;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0px 3px;
+    padding: 7px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: darkcyan;
+    border-radius: 3px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar input {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.navbar input[type='submit'] {
+    margin-left: -5px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.navbar input[type='text'] {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 300px;
+}
+
+
+/* Banner */
+
+.banner {
+    background-image: url("../img/banner.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.offer_text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.offer_text h1 {
+    margin: 8px 0px;
+    letter-spacing: 2px;
+}
+
+.offer_text p {
+    margin: 15px 0px;
+    color: yellow;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+}
+
+.offer_text button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #8bacd1;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+/* Deals of the day */
+
+#dod {
+    margin: 10px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#dod h1 {
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.dod_container {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 10px;
+}
+
+.dod_product img {
+    width: 100%;
+    height: 200px;
+}
+
+.badge {
+    background-color: #688ab2;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.dod_product a {
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+
+/* Categories */
+
+
+/* .ds_container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+.ds_category img {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.ds_category img {
+    width: 100%;
+    height: 200px;
+} */
+
+#cats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+
+.cat {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.cat h4 {
+    text-align: center;
+    margin: 12px 0px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.cat_products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.cat_product {
+    text-align: center;
+}
+
+.cat_product img {
+    height: 120px;
+    width: 140px;
+}
+
+.cat_product a {
+    display: block;
+}
+
+.shop_now {
+    display: block;
+    text-align: center;
+    background-color: #0f2847;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+
+/* Footer */
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #0f2847;
+    padding: 20px;
+    color: #fff;
+}
+
+.link h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 3px 0px;
+}
+
+.link a,
+p {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin: 2px 0px;
+}
+
+.copy {
+    text-align: center;
+    background-color: #8bacd1;
+    color: #fff;
+    padding: 6px;
+    border-top: 2px solid #fff;
+}
